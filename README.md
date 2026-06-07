@@ -4,10 +4,10 @@ API REST CRUD pour la gestion de produits avec upload d'images.
 
 ## Technologies
 
-- **Node.js** + **Express** — serveur HTTP
-- **MySQL** + **mysql2** — base de données
-- **Multer** — upload d'images
-- **UUID** — identifiants uniques
+- **Node.js** + **Express** - serveur HTTP
+- **MySQL** + **mysql2** - base de données
+- **Multer** - upload d'images
+- **UUID** - identifiants uniques
 
 ## Installation
 
