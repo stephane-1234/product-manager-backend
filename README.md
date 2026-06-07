@@ -5,7 +5,7 @@ API REST CRUD pour la gestion de produits avec upload d'images.
 ## Technologies
 
 - **Node.js** + **Express** — serveur HTTP
-- **MySQL** + **Prisma ORM** — base de données
+- **MySQL** + **mysql2** — base de données
 - **Multer** — upload d'images
 - **UUID** — identifiants uniques
 
@@ -27,10 +27,21 @@ DB_NAME=product_manager
 PORT=3005
 ```
 
-Lance la migration :
+Crée la base de données dans MySQL :
 
-```bash
-npx prisma migrate dev
+```sql
+CREATE DATABASE product_manager;
+
+USE product_manager;
+
+CREATE TABLE product (
+  productId VARCHAR(36) PRIMARY KEY,
+  productTitle VARCHAR(255) NOT NULL,
+  productDescription TEXT,
+  productPrice DECIMAL(10,2) NOT NULL,
+  availableQuantity INT NOT NULL DEFAULT 0,
+  productThumbnail VARCHAR(255)
+);
 ```
 
 Démarre le serveur :
