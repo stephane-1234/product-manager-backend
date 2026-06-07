@@ -1,4 +1,4 @@
-# Product Manager — Back-end Node.js
+# Product Manager - Back-end Node.js
 
 API REST CRUD pour la gestion de produits avec upload d'images.
 
